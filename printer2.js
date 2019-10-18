@@ -22,17 +22,19 @@ var fixPrinter = function() {
     var boolPrinting = $("not_printing").selected;  //returns a value of true only when the not_printing html id is selected from the dropdown menu
     var boolRedLight = $("yes_redlight").selected;  //returns a value of true only when the yes_redlight html id is selected from the dropdown menu
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
+ 
 
     //enter your code here and don't forget to send the output to the DOM
-    switch (true) {
+    switch (true)
+    {
         case boolPrinting === true && boolRedLight === true && boolRecognised === true:
-             stringOutput = stringMessage2  + stringMessage3 + stringMessage4;
+             stringOutput = stringMessage2  + "\n" + stringMessage3 +"\n" + stringMessage4;
              break;
         case boolPrinting === true && boolRedLight === true && boolRecognised === false:   
-            stringOutput = stringMessage4 + "\n" + stringMessage5   
+            stringOutput = stringMessage4 + "\n" + stringMessage5;
             break;
         case boolPrinting === true && boolRedLight === false && boolRecognised === true:
-            stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3_;   
+            stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3;   
             break;
         case boolPrinting === true && boolRedLight === false && boolRecognised === false:    
             stringOutput = stringMessage5;
@@ -49,11 +51,9 @@ var fixPrinter = function() {
     default:
      stringOutput = "No problem";
         break;
-   
-
-   
+                    
     }
-       $("output").value = stringOutput;
+    $("output").value = stringOutput:
 };
     
 		
