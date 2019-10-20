@@ -53,7 +53,7 @@ var fixPrinter = function() {
         break;
                     
     }
-    $("output").value = stringOutput:
+    $("output").value = stringOutput;
 };
     
 		
