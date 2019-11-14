@@ -85,17 +85,8 @@ while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > int
     {
         alert ("Guess is too low");
     }
-    intCount ++;
- 
-
-intGuess = prompt("Enter a guess between " + intMin + " and " + intMax);
- 
-while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > intMax)
-  {
-    intGuess = prompt ("Your guess is invalid");
+    intCount ++; 
   }
- 
-}
  
  
  
