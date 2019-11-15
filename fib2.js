@@ -17,7 +17,7 @@ var generate = function ()
 	
 	// write whatever kind of loop you want, given the above info, to generate the appropriate
 	// number of fibonacci numbers and then post it to the html DOM 
-    if (NaN(intCount) || intCount < 2 || intCount> 100)
+    if (isNaN(intCount) || intCount < 2 || intCount> 100)
         {
             alert ("Not a valid number");
             $("total_fib").value= "";
