@@ -11,7 +11,7 @@ var intMax, intMin, intRandom, intGuess, intCount;
  * number is at least 0.
 */
 
-intMin = prompt("Enter Min");
+intMin = parseInt (prompt("Enter Min"));
 while (isNaN(intMin) || intMin <0)
 {
     intMin = prompt("Your number was invalid");
@@ -28,7 +28,7 @@ while (isNaN(intMin) || intMin <0)
 */
 
 
-intMax = prompt("Enter Max");
+intMax = parseInt(prompt("Enter Max"));
 while (isNaN(intMax) || intMax < (intMin + 2))
 {
     intMax = prompt("Your number was invalid");
@@ -58,9 +58,9 @@ intCount=1;
  * number is between the allowed max and min number choices.
 */
 
-intGuess = prompt("Enter a guess between " + intMin + " and " + intMax);
+intGuess = parseInt (prompt("Enter a guess between " + intMin + " and " + intMax));
 
-while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > intMax)
+while(isNaN(intGuess) ||intGuess < intMin || intGuess > intMax)
 {
     intGuess = prompt ("Your guess is invalid");
 }
@@ -88,10 +88,10 @@ while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > int
     intCount ++; 
  
  
-intGuess = prompt("Enter a guess between " + intMin + " and " + intMax);
+intGuess = parseInt (prompt("Enter a guess between " + intMin + " and " + intMax));
 	
 
-while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > intMax)
+while(isNaN(intGuess) || intGuess < intMin || intGuess > intMax)
 	{
     		intGuess = prompt ("Your guess is invalid");
 	}
