@@ -76,14 +76,14 @@ while(isNaN(intGuess) || parseInt(intGuess) < intMin || parseInt(intGuess) > int
 
  while (intGuess != intRandom)
  {
-    if (intGuess > intRandom)
+    if (intGuess < intRandom)
     {
-        alert ("Guess is too high");
+        alert ("Guess is too low");
         
     }
     else  
     {
-        alert ("Guess is too low");
+        alert ("Guess is too high");
     }
     intCount ++; 
  
