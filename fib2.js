@@ -28,7 +28,7 @@ var generate = function ()
     var i=0;  // sets the first number in the Fibonacci series to 0
 	var j=1;  //sets the second number in the Fibonacci series to 1
 	var k;    //k is calculated by adding i+j and represents the next Fibonacci number
-	var stringOutput = i + "" + j + "";//initialize the Fibonacci series output to 
+	var stringOutput = i + " " + j + " ";//initialize the Fibonacci series output to 
  
     while (intCount> 2)
     {
