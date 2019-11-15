@@ -38,8 +38,9 @@ var generate = function ()
     j = k;
     intCount--;
     }
-    $("output").value= stringOutput;
 }
+	$("output").value= stringOutput;
+
 };
 
 // Push solution back to Output through DOM
