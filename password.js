@@ -18,6 +18,13 @@ var passwordCheckOld = function ()
    */
    var intIndex;
    var boolIsBadVal = false;
+   if (stringPassword.length < 8)
+   {
+      boolIsBadVal = true;
+      stringOutput = "Password is too short";
+   }
+    else
+    {
    for(intIndex = 0; intIndex < arrayBadPasswords.length && boolIsBadVal == false && stringPassword.length <= 8; intIndex++)
    {
       if(stringPassword == arrayBadPasswords[intIndex])
@@ -30,7 +37,7 @@ var passwordCheckOld = function ()
    {
       stringOutput = "This is a good password";
    }
-   
+    }
    $("output").value = stringOutput;
 
 
